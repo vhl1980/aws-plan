@@ -15,6 +15,9 @@ Terraform v0.12.24
 
 ```
 
+## SOURCE INSTALL
+https://medium.com/@aliatakan/terraform-create-a-vpc-subnets-and-more-6ef43f0bf4c1
+
 ## INIT AWS TERRAFORM
 
 ``` bash
