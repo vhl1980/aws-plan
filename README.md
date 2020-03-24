@@ -62,3 +62,20 @@ suggested below.
 
 Terraform has been successfully initialized!
 ```
+
+## OPERATE
+
+``` bash
+# GO TO INSIDE WORKSPACE TERRAFORM
+cd terraform/vpc
+
+# PLAN
+terraform plan -out terraform.out
+
+# APPLY
+terraform apply -out terraform.out
+
+# DESTROY
+terraform destroy
+
+```
