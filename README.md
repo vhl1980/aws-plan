@@ -62,3 +62,24 @@ suggested below.
 
 Terraform has been successfully initialized!
 ```
+
+## OPERATE
+
+``` bash
+# GO TO INSIDE WORKSPACE TERRAFORM
+cd terraform/vpc
+
+# SOURCE CREDENTIAL
+export AWS_ACCESS_KEY_ID="anaccesskey"
+export AWS_SECRET_ACCESS_KEY="asecretkey"
+
+# PLAN
+terraform plan -out terraform.out
+
+# APPLY
+terraform apply terraform.out
+
+# DESTROY
+terraform destroy
+
+```
