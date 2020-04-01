@@ -77,7 +77,7 @@ export AWS_SECRET_ACCESS_KEY="asecretkey"
 terraform plan -out terraform.out
 
 # APPLY
-terraform apply -out terraform.out
+terraform apply terraform.out
 
 # DESTROY
 terraform destroy
