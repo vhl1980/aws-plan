@@ -28,8 +28,19 @@ resource "aws_subnet" "public" {
 }
 
 module "igw" {
-  source = "./modules/igw"
+    source = "./modules/igw"
+    vpc_id = aws_vpc.swarm.id
+}
 
-  vpc_id = aws_vpc.swarm.id
+module "sg" {
+    source = "./modules/security_group"
+    vpc_id = aws_vpc.swarm.id
+}
 
+module "rt" {
+    source = "./modules/route_table"
+    vpc_id = aws_vpc.swarm.id
+
+    aws_igw_id = module.igw.igw_swarm
+    aws_sg_id = module.sg.sg_swarm_public
 }

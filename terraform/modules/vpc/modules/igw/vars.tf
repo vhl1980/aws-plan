@@ -1,10 +1,11 @@
+# DEPENDANCY
+variable "vpc_id" {
+	description = ""
+	type = string
+}
+
 # INTERNET GATEWAY
-variable "AWS_IGW_ID" {
+variable "aws_igw_tag" {
     default = "igw-swarm"
 }
 
-
-variable "vpc_id" {
-  description = "VPC ID"
-  type        = string
-}

@@ -17,5 +17,5 @@ variable "aws_vpc_block" {
 }
 
 variable "aws_subnet_block_public" {
-        default = "10.0.0.0/16"
+        default = "10.0.1.0/24"
 }
