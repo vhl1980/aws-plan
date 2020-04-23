@@ -16,6 +16,6 @@ resource "aws_route_table" "rt-swarm-public" {
 }
 
 resource "aws_route_table_association" "swarm-rt-public-subnet-1"{
-    subnet_id = var.aws_sg_id
+    subnet_id = var.aws_subnet_id
     route_table_id = aws_route_table.rt-swarm-public.id
 }

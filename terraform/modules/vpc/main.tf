@@ -1,5 +1,6 @@
 # vpc
 provider "aws" {
+    version = "~> 2.0"
     region = var.aws_region
 }
 
@@ -42,5 +43,5 @@ module "rt" {
     vpc_id = aws_vpc.swarm.id
 
     aws_igw_id = module.igw.igw_swarm
-    aws_sg_id = module.sg.sg_swarm_public
+    aws_subnet_id = aws_subnet.public.id
 }
